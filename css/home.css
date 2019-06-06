@@ -1,0 +1,193 @@
+body
+{
+    background: url(../Images/huisstijl-website.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+a img
+{
+    height: 60px;
+    display: block;
+    margin-top: 1%;
+    margin-left: 2em;
+}
+
+body {
+  font-family: "Arial Rounded mt", sans-serif;
+    animation: animatie 1s forwards;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    margin-left: auto;
+    margin-top: -4.5%;
+}
+
+nav ul {
+  list-style: none;
+    margin-right: 5em;
+}
+
+nav ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 1rem;
+  color: lightseagreen;
+  text-decoration: none;
+  transition: transform 0.3s ease 0s;
+  transform-origin: 50% 0px 0px;
+  transform-style: preserve-3d;
+}
+
+nav ul li a.current {
+  color: #25838C;
+}
+
+nav ul li a:hover {
+  background: #25838C;
+  color: #000;
+  transform: rotateX(90deg) translateY(-22px);
+  border-radius: 20px;
+}
+
+nav ul li a::before {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  padding: 4px 0px;
+  text-align: center;
+  line-height: 50px;
+  background: none repeat scroll 0% 0% #25838C;
+  color: #FFF;
+  content: attr(data-hover);
+  transition: #25838C 0.3s ease 0s;
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0px 0px;
+  border-radius: 20px;
+}
+
+.intro
+{
+    
+    text-align: center;
+    font-size: 30px;
+}
+
+.intro h1
+{
+    margin-top: -11px;
+}
+
+#tekstje
+{
+    width: 38%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+#tekstje p
+{
+    padding: 20px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.posters img
+{
+    height: 300px;
+}
+
+.posters
+{
+    text-align: center;
+}
+
+article
+{
+    padding: 50px;
+    margin-top: 5%;
+}
+
+article img
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h2
+{
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1200px)
+{
+   
+    
+    nav
+    {
+        width: 70%;
+    }
+    
+    .tips
+    {
+        margin-top: 10%;
+    }
+}
+
+@media (max-width:1100px)
+{
+    .posters
+    {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 900px)
+{
+   
+    nav
+    {
+        width: 20%;
+        margin-top: 10%;
+        text-align: center;
+        margin-right: auto;
+    }
+    
+    nav ul
+    {
+        margin-right: -10px;
+    }
+    
+    nav ul a
+    {
+        padding-top: 30px;
+    }
+    
+    #tekstje
+    {
+        width: 70%;
+    }
+    
+    video
+    {
+        height: 200px;
+    }
+    
+}

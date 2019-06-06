@@ -1,0 +1,303 @@
+@import "compass/css3";
+ 
+
+* {
+  box-sizing: border-box;
+}
+
+body
+{
+  background: url(../Images/huisstijl-website.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+a img
+{
+    height: 60px;
+    display: block;
+    margin-top: 1%;
+    margin-left: 2em;
+}
+
+body {
+  font-family: "Arial Rounded mt", sans-serif;
+    animation: animatie 1s forwards;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    margin-left: auto;
+    margin-top: -4.5%;
+}
+
+nav ul {
+  list-style: none;
+    margin-right: 5em;
+}
+
+nav ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 1rem;
+  color: lightseagreen;
+  text-decoration: none;
+  transition: transform 0.3s ease 0s;
+  transform-origin: 50% 0px 0px;
+  transform-style: preserve-3d;
+}
+
+nav ul li a.current {
+  color: #25838C;
+}
+
+nav ul li a:hover {
+  background: #25838C;
+  color: #000;
+  transform: rotateX(90deg) translateY(-22px);
+border-radius: 20px;
+}
+
+nav ul li a::before {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  padding: 4px 0px;
+  text-align: center;
+  line-height: 50px;
+  background: none repeat scroll 0% 0% #25838C;
+  color: #FFF;
+  content: attr(data-hover);
+  transition: #25838C 0.3s ease 0s;
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0px 0px;
+     border-radius: 20px;
+}
+
+.fotos
+{
+    height: 650px;
+    margin-top: 1%;
+    text-align: center;
+}
+
+h2
+{
+    color: white;
+}
+
+p
+{
+    color: #222222;
+}
+
+div p
+{
+    text-align: center;
+}
+
+#tekst
+{
+    width: 100%;
+}
+
+#quote
+{
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    padding-top: 3rem;
+}
+
+article
+{
+    display: flex;
+    width: 70%;
+    padding-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+div
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+
+.info
+{
+    margin-top: 10%;
+    border-radius: 20px;
+    height: 400px;
+}
+
+#insta
+{
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7rem;
+    display: inline-block;
+}
+
+#tekst
+{
+    color: black;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 22px;
+    margin-top: 5px;
+}
+
+#tekst3
+{
+    color: black;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 22px;
+    margin-top: 5px;
+}
+
+#tekst2
+{
+    color: black;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 22px;
+    padding-top: 10px;
+}
+
+p a
+{
+    color: #68BE9A;
+}
+
+p a:hover
+{
+    color: #A0F0A8;
+}
+
+
+
+
+@keyframes animatie
+{
+    0%
+    {
+        opacity: 0;
+    }
+    
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1200px)
+{
+   
+    #quote
+    {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav
+    {
+        width: 70%;
+    }
+    
+    .info p
+    {
+        width: 70%;
+    }
+    
+    .fotos
+    {
+        padding-top: 50px;
+    }
+     article
+    {
+        display: block;
+    }
+   article div
+    {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1100px)
+{
+    .fotos
+    {
+        padding-top: 100px;
+    }
+    
+    
+}
+
+@media (max-width: 900px)
+{
+    nav
+    {
+        width: 20%;
+        margin-top: 10%;
+        text-align: center;
+        margin-right: auto;
+    }
+    
+    nav ul
+    {
+        margin-right: -10px;
+    }
+    
+    nav ul a
+    {
+        padding-top: 30px;
+    }
+    
+    .fotos
+    {
+        padding-top: 200px;
+    }
+     article div
+    {
+        width: 50%;
+        padding-top: 20px;
+    }
+    
+    
+}
+
+@media (max-width: 800px)
+{
+    .fotos
+    {
+        padding-top: 300px;
+    }
+      article div
+    {
+        width: 60%;
+        padding-top: 20px;
+    }
+}
+
